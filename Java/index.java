@@ -1,12 +1,18 @@
 public  class index {
 
     public static void main(String[] args) {
-      Factorial factorial = new Factorial();
+        Queues myQueue = new Queues(4);
+        myQueue.insert(10);
+        myQueue.insert(5);
+        myQueue.insert(2);
+        myQueue.insert(3);
+        System.out.println(myQueue.isFull());
+        myQueue.remove();
 
-
-        System.out.println(factorial.iterativeFactorial(5));
-        System.out.println(factorial.recurFactorial(5));
-
+        myQueue.insert(7);
+        System.out.println(myQueue.peekFront());
+        System.out.println(myQueue.peekRear());
+        System.out.println(myQueue.toString());
 
 
     }
