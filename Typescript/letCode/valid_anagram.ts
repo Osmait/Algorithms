@@ -1,7 +1,6 @@
 export const isValidAnagram=(s:string,t:string):boolean=>{
-    if(s.length != t.length){
-        return false
-    }
+    if(s.length != t.length) return false
+    
     let first: Array<string | null> = s.split('')
     const second = t.split('')
 

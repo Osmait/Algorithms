@@ -2,6 +2,7 @@ from containsDuplicate import containsDuplicate
 from valid_anagram import isAnagram
 from two_sum import twoSum
 from data import prueba
+from group_anagrams import groupAnagrams
 
 
 
@@ -13,3 +14,4 @@ def test_anagram():
 
 def test_two_sum():
     assert(twoSum([4,7,11,15],11) == [0,1])
+
