@@ -1,12 +1,13 @@
-import java.util.Arrays;
-import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
-        String[] lists ={"eat","tea","tan","ate","nat","bat"};
         Solution solution = new Solution();
-        List<List<String>> result = solution.groupAnagrams(lists);
+        String result = solution.howMuchILoveYou(13);
+
+        System.out.println(85%6);
         System.out.println(result);
+
 
 
     }
