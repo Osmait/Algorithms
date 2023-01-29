@@ -195,5 +195,22 @@ public class Solution {
         return arr[nb_petals%6];
     }
 
+    public static String remove(String s, int n){
+        while(n-- >0)
+            s  = s.replaceFirst("!","");
+        return s;
+
+
+
+
+
+    }
+
+    public static int[] invert(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i]*= -1;
+        }
+        return array;
+    }
 
 }
