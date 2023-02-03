@@ -237,4 +237,39 @@ public class Solution {
         return stack.isEmpty();
     }
 
+    public int binarySearch(int[] arr,int low ,int hi,int x){
+     if (low > hi || arr.length == 0){
+         return -1;
+     }
+
+         int mid  = low + (hi-low)/2;
+
+         if (arr[mid] == x)return mid;
+         if (arr[mid] > x)return  binarySearch(arr,low,mid-1,x);
+
+         return binarySearch(arr,mid+1,hi,x);
+
+
+    }
+
+    public  int binarySearch2(int[] list,int l ,int r,int x){
+        int mid  = l + (r-l)/2;
+        System.out.println(list[mid]);
+
+        while (list[mid] != x){
+
+            if (r<= l || r< 0 )return -1;
+
+            if (list[mid]> x){
+                r= mid -1;
+            }else {
+                l  = mid +1 ;
+            }
+
+            mid = l + (r+ l)/2;
+        }
+        return mid;
+
+    }
+
 }
